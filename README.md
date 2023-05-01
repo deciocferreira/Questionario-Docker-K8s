@@ -1,4 +1,4 @@
-# Questionário Docker and K8s 
+# Questionário Docker e K8s 
 
 ## Docker <image src="https://user-images.githubusercontent.com/12403699/227597435-511fd8ae-c873-4fa4-b06f-a6fbe9bc1667.png" width="100" height="80">
 
