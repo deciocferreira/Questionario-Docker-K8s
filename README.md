@@ -41,17 +41,17 @@
    - D. Não há diferença. **COPY** é um *alias* para **ADD**.
    - E.  **COPY** não suporta cópia recursiva, enquanto **ADD** suporta.
    
-6. Considere o seguinte output do inspect no Docker:
+6. Considere o seguinte inspect output no Docker:
 
-![image](https://user-images.githubusercontent.com/12403699/235465588-775dfe0e-02b2-43ba-901a-0934bbe5d8ed.png)
-![image](https://user-images.githubusercontent.com/12403699/235465664-3b647675-7393-4255-b814-161cf5d21145.png)
+   <image src="https://user-images.githubusercontent.com/12403699/235465588-775dfe0e-02b2-43ba-901a-0934bbe5d8ed.png" width="600" height="400">
+   <image src="https://user-images.githubusercontent.com/12403699/235465664-3b647675-7393-4255-b814-161cf5d21145.png" width="600" height="400">   
 
-Qual comando deve ser executado para retornar apenas **ipaddress** do container **mycontainer**?
+   Qual comando deve ser executado para retornar apenas o endereço IP **ipaddress** do container **mycontainer**?
 
- - A. docker inspect -f '{{.NetworkingSettings.IPAddress}}' mycontainer
- - B. docker inspect -f '{{NetworkingSettings(IPAddress)}' mycontainer }
- - C. docker inspect -o mycontainer -o '{{range.NetworkingSettings.Networks}}{{.IPAddress}}{{end}}'
- - D. docker inspect -o '{{mycontainer.NetworkSettings.IPAdress}}'
+   - A. docker inspect -f '{{.NetworkingSettings.IPAddress}}' mycontainer
+   - B. docker inspect -f '{{NetworkingSettings(IPAddress)}' mycontainer }
+   - C. docker inspect -o mycontainer -o '{{range.NetworkingSettings.Networks}}{{.IPAddress}}{{end}}'
+   - D. docker inspect -o '{{mycontainer.NetworkSettings.IPAdress}}'
   
 7. Você deseja remover todas a imagens sem uso do seu Docker host para ganhar mais espaço. Qual comando deve executar?
  
@@ -117,7 +117,7 @@ Qual comando deve ser executado para retornar apenas **ipaddress** do container 
    - C. livenessProbe
    - D. startupProbe
  
- 5. No K8s, um *Probe* é um diagnóstico feito periodicamente pelo *kubelet* em um container. Para performar, o *kubelet* invoca um *handler* implementado pelo container. Qual das opções a seguir de *handler* não é suportado pelo K8s?
+5. No K8s, um *Probe* é um diagnóstico feito periodicamente pelo *kubelet* em um container. Para performar, o *kubelet* invoca um *handler* implementado pelo container. Qual das opções a seguir de *handler* não é suportado pelo K8s?
  
    - A. UDPSocketAction
    - B. TCPSockerAction
