@@ -70,44 +70,47 @@ As respostas certas estão destacadas em negrito.
     - B. docker run --name dashboard \
          -v web_dir nginx:latest**
       
-    - C. docker run --name dashboard \
-         -v web_dir:/var/www/html nginx:latest
+    - **C. docker run --name dashboard \
+         -v web_dir:/var/www/html nginx:latest**
          
     - D. docker run --name dashboard \
          -v /var/www/html nginx:latest      
          
 9. Qual é o diretório **root default** do docker em um sistema Linux? Escreva o diretório completo por extenso.
 
-
+    **/var/lib/docker**
+    
 10. Qual dos comandos a seguir cria um container com um **endereço DNS customizado 8.8.8.8** ?
     
     - A. docker container create -add-dns=8.8.8.8
     - B. docker container create -custom-dns=8.8.8.8
     - C. docker container create -resolve=8.8.8.8
-    - D. docker container create -dns=8.8.8.8
+    - **D. docker container create -dns=8.8.8.8**
     
 11. Para aumentar a eficiência e performance do *build* no docker você precisa **excluir arquivos e diretórios irrelevantes** do diretório contexto. O que deve ser feito?
     
     - A. Adicionar o arquivo **.gitexclude** na pasta do contexto para especificar os arquivos irrelevantes files/dirs.
     - D. Usar a opção **docker build -e <irrelevant files/dir> enquanto ocorre o build.
     - C. Usar o instrução **EXCLUDE <irrelevant files/dir> dentro do dockerfile.
-    - D. Adicionar o arquivo **.dockerignore** na pasta do contexto para especificar os arquivos irrelevantes files/dirs.
+    - **D. Adicionar o arquivo **.dockerignore** na pasta do contexto para especificar os arquivos irrelevantes files/dirs.**
             
    
  # Kubernetes <image src="https://user-images.githubusercontent.com/12403699/227604690-54fb4263-a38a-4cd5-a4dc-951b19861625.png" width="80" height="80">
  
  1. Em qual *namespace* o K8s cria os obejtos internos? Escreva o nome do Namespace completo por extenso.
- 
+    
+    **kube-system**
+    
  2. O que deve acontecer quando é executado o seguinte comando? " kubectl scale --current-replicas=2 --replicas=3 deployment/mysql"
     
-    - A. Se o deployment denominado **mysql** for configurado para escala 2, ele será escalado para 3.
+    - **A. Se o deployment denominado **mysql** for configurado para escala 2, ele será escalado para 3.**
     - B. O deployment denominado **mysql** será escalado para 2 e terá o autoscaling configurado para no máximo 3 replicas.
     - C. O deployment denominado **mysql** será escalado para 3 não importa como.
     - D. O deployment denominado **mysql** será escalado para 2 não importa como.
     
 3. Qual dos seguintes recursos do K8s pode ser usado para fazer o **host-based routing** para múltiplas aplicações rodando dentro do cluster?
 
-   - A. IngressController
+   - **A. IngressController**
    - B. Ingress
    - C. Serviço do tipo LoadBalancer
    - D. Não há como fazer essa configuração. Há apenas como fazer rotamento **path-based** 
@@ -117,11 +120,11 @@ As respostas certas estão destacadas em negrito.
    - A. pingProbe
    - B. readinessProbe
    - C. livenessProbe
-   - D. startupProbe
+   - **D. startupProbe**
  
 5. No K8s, um *Probe* é um diagnóstico feito periodicamente pelo *kubelet* em um container. Para performar, o *kubelet* invoca um *handler* implementado pelo container. Qual das opções a seguir de *handler* não é suportado pelo K8s?
  
-   - A. UDPSocketAction
+   - **A. UDPSocketAction**
    - B. TCPSockerAction
    - C. ExecAction
    - D. HTTPGetAction
